@@ -497,10 +497,10 @@ function updatePositions() {
   var items = document.querySelectorAll('.mover');
 
   // reduce number of loops. Loops only within the number pizzas in screen view: i < 6
-  for (var i = 0; i < 6; i++) {
+  for (var i = 0; i < 9; i++) {
     var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
     // optimized using translateX
-    items[i].style.transform = 'translateX(' + 100 * phase + 'px)';
+    items.style.transform = 'translateX(' + 100 * phase + 'px)';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
@@ -521,9 +521,9 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
 
   // reduced number of pizzas in background
-  var cols = 2;
+  var cols = 3;
   var s = 300;
-  for (var i = 0; i < 6; i++) {
+  for (var i = 0; i < 9; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza-small.svg";
@@ -531,7 +531,7 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.style.width = "73.333px";
     //elem.basicLeft = (i % cols);
     // set style to left in order to animate pizza using translateX
-    elem.style.left = (i % cols) * s * 4 + 200 + 'px';
+    elem.style.left = (i % cols) * s * 2.2 + 100 + 'px';
     elem.style.top = (Math.floor(i / cols) * s + 100) + 'px';
     document.querySelector("#movingPizzas1").appendChild(elem);
   }
