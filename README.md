@@ -18,12 +18,18 @@ Only way I could get close to 60fps after trying all the other steps was to redu
 
 
 Steps taken to achieve 60fps and pizza resize under 5 ms
-* 4 things the browser can animate cheaply.
-Position - transform: translate(npx, npx);, Scale - transform: scale(n);, Rotate - transform: rotate(ndeg);, Opacity: 0..1;
-Source: http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/
 * Utilized transform: scale(n);, to resize Pizzas
 * Utilized transform: translateX(npx);, for pizza animation when scrolling
 * Add async in JS
 * Minified CSS and JS
 * compressed and utilized svg formats for images
 * Reduced number of pizzas
+
+
+Resources used throughout this project
+* [Optimizing Performance](https://developers.google.com)
+* [Advanced performance tooling in Chrome DevTools - Paul Irish](https://www.youtube.com/watch?v=0xx_dkv9DEY)
+* [High Performance Animations](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
+* [Resize Images](http://www.picresize.com/)
+* [Compress png](https://tinypng.com/)
+* [Gulp](https://gulpjs.com)
