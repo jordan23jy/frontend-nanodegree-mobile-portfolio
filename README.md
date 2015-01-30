@@ -15,6 +15,11 @@ Link to [Frontend-Nanodegree-Mobile-Portfolio/](http://projects.jordanyong.com/f
 ####Pizza.html
 This was an extremely difficult project for me to get under 60fps.
 Only way I could get close to 60fps after trying all the other steps was to reduce the number of pizzas.
+Main concern leading to low fps was the long paint time. There were two insights that lead to long paint times by Paul Irish [Profiling Long Paint Times](http://updates.html5rocks.com/2013/02/Profiling-Long-Paint-Times-with-DevTools-Continuous-Painting-Mode)
+* CSS styles: background-attachment:fixed
+* Reduce the painting cost of the areas that get repainted
+* CSS styles: border-radius and box-shadow
+In this case I've reduced the number of moving pizzas to reduce the painting cost
 
 
 Steps taken to achieve 60fps and pizza resize under 5 ms
