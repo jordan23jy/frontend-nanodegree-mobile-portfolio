@@ -33,3 +33,4 @@ Resources used throughout this project
 * [Resize Images](http://www.picresize.com/)
 * [Compress png](https://tinypng.com/)
 * [Gulp](https://gulpjs.com)
+* [Profiling Long Paint Times - Paul Irish](http://updates.html5rocks.com/2013/02/Profiling-Long-Paint-Times-with-DevTools-Continuous-Painting-Mode)
