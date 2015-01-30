@@ -7,8 +7,8 @@ Link to [Frontend-Nanodegree-Mobile-Portfolio/](http://projects.jordanyong.com/f
 
 ####index.html
 Steps taken to achieve score above 90 with [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
-* Optimized Images by resizing and minifying
-* Minified CSS and JS
+* Optimize Images by resizing and minifying
+* Minifie CSS and JS
 * Move JS to end of HTML body tag
 * Add async to script tag
 
@@ -25,12 +25,12 @@ In this case I've reduced the number of moving pizzas to reduce the painting cos
 
 
 Steps taken to achieve 60fps and pizza resize under 5 ms
-* Utilized transform: scale(n); to resize pizzas
-* Utilized transform: translateX(npx); for mocing pizzas when scrolling
+* Utilize transform: scale(n); to resize pizzas
+* Utilize transform: translateX(npx); for mocing pizzas when scrolling
 * Add async in JS
-* Minified CSS and JS
-* compressed and utilized svg formats for images
-* Reduced number of pizzas to reduce cost of areas that get repainted
+* Minify CSS and JS
+* Compress and utilized svg formats for images
+* Reduce number of pizzas to reduce cost of areas that get repainted
 
 
 Resources used throughout this project
