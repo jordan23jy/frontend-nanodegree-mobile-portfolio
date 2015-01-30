@@ -13,10 +13,6 @@ Link to [Frontend-Nanodegree-Mobile-Portfolio/](http://projects.jordanyong.com/f
 
 
 ####Pizza.html
-Problems faced
-* minified js version doesn't work. Error "Cannot read property 'style' of undefined".
-Unsure how to fix this except by not using the minified version.
-
 Steps taken to achieve 60fps and pizza resize under 5 ms
 * 4 things the browser can animate cheaply.
 Position - transform: translate(npx, npx);, Scale - transform: scale(n);, Rotate - transform: rotate(ndeg);, Opacity: 0..1;
