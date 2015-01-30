@@ -19,6 +19,7 @@ Main concern leading to low fps was the long paint time. There were two insights
 * CSS styles: background-attachment:fixed
 * Reduce the painting cost of the areas that get repainted
 * CSS styles: border-radius and box-shadow
+
 In this case I've reduced the number of moving pizzas to reduce the painting cost
 
 
