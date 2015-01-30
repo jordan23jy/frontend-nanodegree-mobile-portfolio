@@ -13,6 +13,10 @@ Link to [Frontend-Nanodegree-Mobile-Portfolio/](http://projects.jordanyong.com/f
 
 
 ####Pizza.html
+This was an extremely difficult project for me to get under 60fps.
+Only way I could get close to 60fps after trying all the other steps was to reduce the number of pizzas.
+
+
 Steps taken to achieve 60fps and pizza resize under 5 ms
 * 4 things the browser can animate cheaply.
 Position - transform: translate(npx, npx);, Scale - transform: scale(n);, Rotate - transform: rotate(ndeg);, Opacity: 0..1;
