@@ -5,14 +5,15 @@ Link to [Frontend-Nanodegree-Mobile-Portfolio/](http://projects.jordanyong.com/f
 
 
 
-####Steps taken to achieve score above 90 on index.html on [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+####index.html
+Steps taken to achieve score above 90 with [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 * Optimized Images by resizing and minifying
 * Minified CSS and JS
 * Move JS to end of HTML body tag
 * Add async to script tag
 
 
-####Pizza.html
+####pizza.html
 This was an extremely difficult project for me to get under 60fps.
 Only way I could get close to 60fps after trying all the other steps was to reduce the number of pizzas.
 Main concern leading to low fps was the long paint time. There were two insights that lead to long paint times by Paul Irish [Profiling Long Paint Times](http://updates.html5rocks.com/2013/02/Profiling-Long-Paint-Times-with-DevTools-Continuous-Painting-Mode)
@@ -24,12 +25,12 @@ In this case I've reduced the number of moving pizzas to reduce the painting cos
 
 
 Steps taken to achieve 60fps and pizza resize under 5 ms
-* Utilized transform: scale(n);, to resize Pizzas
-* Utilized transform: translateX(npx);, for pizza animation when scrolling
+* Utilized transform: scale(n); to resize pizzas
+* Utilized transform: translateX(npx); for mocing pizzas when scrolling
 * Add async in JS
 * Minified CSS and JS
 * compressed and utilized svg formats for images
-* Reduced number of pizzas
+* Reduced number of pizzas to reduce cost of areas that get repainted
 
 
 Resources used throughout this project
