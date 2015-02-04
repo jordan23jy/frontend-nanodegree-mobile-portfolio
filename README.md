@@ -3,34 +3,33 @@
 
 Link to [Frontend-Nanodegree-Mobile-Portfolio/](http://projects.jordanyong.com/frontend-nanodegree-mobile-portfolio/)
 
-
+Optimized sections are commented 'OPTIMIZE:' in main.js for pizza.html
 
 ####index.html
 Steps taken to achieve score above 90 with [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 * Optimize Images by resizing and minifying
-* Minifie CSS and JS
+* Minify CSS and JS
 * Move JS to end of HTML body tag
 * Add async to script tag
 
 
 ####pizza.html
-This was an extremely difficult project for me to get under 60fps.
-Only way I could get close to 60fps after trying all the other steps was to reduce the number of pizzas.
-Main concern leading to low fps was the long paint time. There were two insights that lead to long paint times by Paul Irish [Profiling Long Paint Times](http://updates.html5rocks.com/2013/02/Profiling-Long-Paint-Times-with-DevTools-Continuous-Painting-Mode)
-* CSS styles: background-attachment:fixed
-* Reduce the painting cost of the areas that get repainted
-* CSS styles: border-radius and box-shadow
-
-In this case I've reduced the number of moving pizzas to reduce the painting cost
-
-
 Steps taken to achieve 60fps and pizza resize under 5 ms
-* Utilize transform: scale(n); to resize pizzas
-* Utilize transform: translateX(npx); for mocing pizzas when scrolling
+
+Pizza Resize
+* Move out of sizeSwitcher function out of determineDX loop (calulation only done once instead of within each loop)
+* Calculate new width of pizza outside loop once, as all containers are the same
+
+Moving Pizzas
+* Determine scroll top position outside of for loop when updating updating position of moving pizzas during scroll
+* Utilize style = transform: translateX, avoiding layout re-rendering
+* Initial position of moving pizza is set outside of loop
+
+General
 * Add async in JS
 * Minify CSS and JS
 * Compress and utilized svg formats for images
-* Reduce number of pizzas to reduce cost of areas that get repainted
+* Reduce number of moving pizzas in header from 200 to 36, to reduce cost of areas that get repainted
 
 
 Resources used throughout this project
