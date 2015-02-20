@@ -1,7 +1,7 @@
 #Web Performance Optimization
 ### Udacity Nanodegree Project 4
 
-Link to [Frontend-Nanodegree-Mobile-Portfolio/](http://projects.jordanyong.com/frontend-nanodegree-mobile-portfolio/)
+Link to [Frontend-Nanodegree-Mobile-Portfolio/](http://projects.jordanyong.com/udacity-mobile-portfolio/)
 
 Optimized sections are commented 'OPTIMIZE:' in main.js for pizza.html
 
@@ -11,6 +11,7 @@ Steps taken to achieve score above 90 with [PageSpeed Insights](https://develope
 * Minify CSS and JS
 * Move JS to end of HTML body tag
 * Add async to script tag
+* Inline necessary css and load rest of css when DOM is ready
 
 
 ####pizza.html
