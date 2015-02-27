@@ -1,7 +1,7 @@
 #Web Performance Optimization
 ### Udacity Nanodegree Project 4
 
-Link to [Frontend-Nanodegree-Mobile-Portfolio/](http://projects.jordanyong.com/udacity-mobile-portfolio/)
+Project can be reviewed here http://blog.jordanyong.com/projects/
 
 Optimized sections are commented 'OPTIMIZE:' in main.js for pizza.html
 
